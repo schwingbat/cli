@@ -17,7 +17,7 @@ const { command, run } = CLI({
 command({
   signature: "greet <name>",
   description: "print a greeting",
-  examples: ["appname hello Bob"],
+  examples: ["util greet Bob"],
   arguments: [
     {
       name: "name",
@@ -61,15 +61,15 @@ Add this script to your `package.json` `bin` object:
 Now do an `npm install -g .` on your package and you can now call it like so:
 
 ```bash
-$ util hello
+$ util greet
 Hello, World!
 
-$ util hello Bob
+$ util greet Bob
 Hello, Bob!
 
-$ util hello Bob --caps
+$ util greet Bob --caps
 HELLO, BOB!
 
-$ util hello human -c
+$ util greet human -c
 HELLO, HUMAN!
 ```
