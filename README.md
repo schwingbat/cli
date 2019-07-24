@@ -17,7 +17,7 @@ const { command, run } = CLI({
 command({
   signature: "greet <name>",
   description: "print a greeting",
-  examples: ["appname hello Bob"],
+  examples: ["util hello Bob"],
   arguments: [
     {
       name: "name",
